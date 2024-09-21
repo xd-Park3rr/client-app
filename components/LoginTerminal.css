@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('path/to/your/stars.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes full height */
+  flex-direction: column; /* Center children vertically */
+}
+
+.login-container {
+  /* Keep all existing styles here */
+  /* No changes to borders or other existing styles */
+  padding: 20px; /* or whatever padding you had */
+  /* Optionally add margin for spacing if needed */
+}
+  .login-form {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #333;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .login-form button:hover {
+    background-color: #e6b800;
+  }
+  
+  .login-form .toggle-form {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .login-form .toggle-form span {
+    color: #ffd700;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .login-form .toggle-form span:hover {
+    color: #ffb900;
+  }
+  
+  /* reCAPTCHA Styling */
+  .recaptcha-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  

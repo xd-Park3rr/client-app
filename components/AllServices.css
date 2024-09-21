@@ -1,0 +1,71 @@
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.service-block {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.service-block.open {
+  height: auto;
+}
+
+.service-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2; 
+  z-index: -1;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-icon {
+  font-size: 18px;
+}
+
+.service-description {
+  margin-top: 15px;
+  font-size: 14px;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.service-block:hover {
+  transform: scale(1.05);
+  background-color: rgba(50, 50, 50, 0.8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+}
+
+@media (max-width: 768px) {
+  .service-block {
+    width: 100%; 
+  }
+}

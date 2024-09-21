@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Change this to your desired font */
+    background: black;
+    color: white;
+    height: 100%; /* Ensure body takes full height */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 80px 20px 20px; /* Add padding on top */
+    background-image: url('/space-theme.gif');
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Ensure full width */
+}
+
+.text-image-container {
+    display: flex; /* Align text and image side by side */
+    flex: 1; /* Allow this section to grow */
+    justify-content: space-between; /* Space between text and image */
+    margin-bottom: 20px; /* Space below text and image */
+    width: 100%; /* Ensure full width */
+}
+
+.text-container {
+    flex: 1; /* Allow the text container to grow */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.hero-image {
+    flex: 1; /* Allow the hero image to grow */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+}
+
+.hero-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-container h1 {
+    font-size: 6rem; /* Enlarge heading font size */
+    text-align: center;
+    margin-top: 20px; /* Space above the heading */
+}
+
+.text-container p {
+    font-size: 2rem; /* Enlarge paragraph font size */
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.contact-form {
+    margin-top: auto; /* Push the contact form to the bottom */
+}
+
+.features, .testimonials, .call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background */
+    margin: 20px 0; /* Space between sections */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.features h2, .testimonials h2, .call-to-action h2 {
+    font-size: 3rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.features ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.features li {
+    font-size: 1.5rem; /* Adjust feature item size */
+    margin: 10px 0; /* Space between list items */
+}
+
+.testimonials blockquote {
+    font-size: 1.5rem; /* Adjust quote size */
+    margin: 20px 0; /* Space around quotes */
+    padding: 10px;
+    border-left: 4px solid white; /* Quote line */
+    font-style: italic; /* Italicize quotes */
+}
+
+.call-to-action h2 {
+    font-size: 3rem; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.contact-section {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between the contact form and find us section */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.find-us {
+    margin-left: 40px; /* Space between the contact form and find us section */
+    flex: 1; /* Allow it to grow */
+    text-align: left; /* Align text to the left */
+}
+
+
+.find-us h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.find-us p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+    margin: 5px 0; /* Space between paragraphs */
+}
