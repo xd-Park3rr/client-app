@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <Link to="/">WebDevPro</Link>
+        <Link to="/Home">ParaTech</Link>
       </div>
 
       <div className={`navbar-links ${mobileMenuActive ? "mobile-active" : ""}`}>
@@ -23,10 +23,19 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-toggle" onClick={toggleMobileMenu}>
-        &#9776;
       </div>
     </div>
   );
 };
+
+// window.onscroll = function() {
+//   var navbar = document.querySelector('.navbar');
+//   if (window.scrollY > 100) {
+//       navbar.style.backgroundColor = '#2a2a2a';
+//   } else {
+//       navbar.style.backgroundColor = '#1e1e1e';
+//   }
+// }
+
 
 export default Navbar;

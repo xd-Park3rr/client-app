@@ -1,20 +1,23 @@
+/* Apply a flexbox layout to the body or the main wrapper */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif; /* Change this to your desired font */
+    font-family: 'Arial', sans-serif;
     background: black;
     color: white;
-    height: 100%; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
 .home-container {
+    flex: 1; /* Take up remaining space but allow content to grow if needed */
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    min-height: 100vh; /* Full height of the viewport */
-    padding: 80px 20px 20px; /* Add padding on top */
+    flex-direction: column;
+    padding: 80px 20px 20px;
     background-image: url('/space-theme.gif');
     background-size: cover;
     background-position: center;
-    width: 100%; /* Ensure full width */
+    width: 100%;
 }
 
 .text-image-container {
@@ -103,19 +106,60 @@ body {
     align-items: flex-start; /* Align items at the start */
 }
 
-.find-us {
-    margin-left: 40px; /* Space between the contact form and find us section */
-    flex: 1; /* Allow it to grow */
-    text-align: left; /* Align text to the left */
+footer {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #121212; /* Ensure footer has a background */
+    position: relative;
+    flex-shrink: 0; /* Prevent footer from shrinking or overlapping content */
 }
 
-
-.find-us h2 {
-    font-size: 2.5rem; /* Adjust heading size */
-    margin-bottom: 10px; /* Space below heading */
+.text-image-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
 }
-
-.find-us p {
-    font-size: 1.2rem; /* Adjust paragraph size */
-    margin: 5px 0; /* Space between paragraphs */
-}
+  
+  footer .find-us h2, footer .find-us h3, footer .find-us p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  /* Social Media Icons */
+  footer .social-links a {
+    margin: 0 10px;
+  }
+  
+  footer .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Sticky Footer */
+  body.home .container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  body.home footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Contact Us Page - Keep content above footer */
+  body.contact-us .container {
+    padding-bottom: 120px; /* Adjust this based on footer height */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    footer .social-links img {
+      width: 25px;
+      height: 25px;
+    }
+  }

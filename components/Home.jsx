@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactUsForm from './ContactUsForm';
+// import Footer from './Footer'
 import './Home.css'; 
 
 const Home = () => {
@@ -42,29 +43,7 @@ const Home = () => {
         <p>Contact us today and let's build your dream website together!</p>
         <div className="contact-section">
           <ContactUsForm />
-          <div className="find-us">
-            <h2>Find Us</h2>
-            <p>123 WebDev Street</p>
-            <p>Tech City, TC 12345</p>
-            <p>Email: contact@webdevpro.com</p>
-            <p>Phone: (123) 456-7890</p>
-
-            <h3>Follow Us</h3>
-            <div className="social-links">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="path/to/instagram-icon.png" alt="Instagram" />
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="path/to/linkedin-icon.png" alt="LinkedIn" />
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <img src="path/to/github-icon.png" alt="GitHub" />
-                </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="path/to/facebook-icon.png" alt="Facebook" />
-                </a>
-            </div>
-            </div>
+          {/* <Footer /> */}
         </div>
       </section>
     </div>
